@@ -1,1 +1,1 @@
-ECHO is on.
+To jest plik README 
