@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pierwsza strona w jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript">
+   $(function () {
+$('#paragraf_1').css('color', 'red').append(' to pierwsza cyfra');
+$('.klasa_2').css('color', 'green').append(' to kolejna cyfra');
+$('div').css('color', 'blue');
+$('.klasa_1').css('font-size', 'large');
+$('td').css('background','yellow');
+$('table tr:first').css('color', 'grey');
+$('tr:last').css('color', 'green');
+$('p:even').css({'color':'pink', 'font-size': '20px', 'background':'yellow' });
+$('tr:eq(3)').css({'color':'red', 'font-size': '20px' });
+$('td:gt(3)').css({'color':'orange', 'font-size': '20px', 'background':'lightblue'});
+$('[href]').css('border', '1px solid black').css('padding', '3px');
+$('a[href*=agh]').css('border', '1px solid pink');
+$('a[href$=\'.html\']').css('border', '1px solid red');
+});
+
+$(document).ready(function(){
+  $(":input").css("background-color", "red");
+});
+
+</script>
+</head>
+<body>
+    <p id="paragraf_1">Jeden</p><p class = "klasa_2">Dwa</p>
+<p>Trzy</p><p>Cztery</p>
+<div>Pięć</div><div class="klasa_1">Sześć</div>
+<table>
+<tr><td>Mercedes</td></tr>
+<tr><td>Audi</td></tr>
+<tr><td>BMW</td></tr>
+<tr><td>Toyota</td></tr>
+<tr><td>Kia</td></tr>
+<tr><td>Fiat</td></tr>
+</table>
+<a href="strona1.html">Link1</a>
+<a href="strona2agh.pdf">Link2</a>
+<a href="strona3.html">Link3</a>
+
+<form action="">
+    Name: <input type="text" name="user"><br>
+    Password: <input type="password" name="password"><br>
+    <button type="button">Useless Button</button>
+    <input type="button" value="Another useless button"><br>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit"><br>
+  </form>
+  
+    
+</body>
+</html>
